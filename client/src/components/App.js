@@ -3,8 +3,7 @@ import Header from "./Header";
 import Login from "./Login";
 import SignUp from "./SignUp";
 import Tasks from "./Tasks";
-import TaskModal from "./TaskModal";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import "./styling/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";

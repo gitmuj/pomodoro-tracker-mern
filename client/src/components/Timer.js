@@ -11,10 +11,9 @@ const Timer = ({ task, addTomatoe, updateTaskList }) => {
   const [showModal, setShowModal] = useState(false);
 
   let interval = useRef();
-  let minuteInterval = useRef();
 
   const handleStart = () => {
-    if (seconds == 0) {
+    if (seconds === 0) {
       setTimeout(() => {
         setSeconds(seconds => seconds + 59);
         setMinutes(minutes => minutes - 1);
@@ -25,7 +24,7 @@ const Timer = ({ task, addTomatoe, updateTaskList }) => {
         setSeconds(seconds => {
           if (seconds > 0) {
             return seconds - 1;
-          } else if (seconds == 0) {
+          } else if (seconds === 0) {
             setMinutes(minutes => (minutes > 0 ? minutes - 1 : 0));
 
             return 59;
@@ -55,15 +54,13 @@ const Timer = ({ task, addTomatoe, updateTaskList }) => {
   //recieve the selected task as property that is passed to the timer component
 
   const req = { id: task };
-  if (minutes == 24 && seconds == 0) {
+  if (minutes === 0 && seconds === 0) {
     clearInterval(interval.current);
     addTomatoe(req);
     updateTaskList();
     setMinutes(25);
     setShowModal(true);
   }
-
-  const modalToggle = () => {};
 
   return (
     <React.Fragment>

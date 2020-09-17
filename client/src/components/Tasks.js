@@ -46,7 +46,14 @@ class Tasks extends React.Component {
   renderTomatoes = numberOfTomatoes => {
     const tomatoes = [];
     for (let i = 0; i < numberOfTomatoes; i++) {
-      tomatoes.push(<img src={tomatoIcon} className="tomato-icon"></img>);
+      tomatoes.push(
+        <img
+          alt="tomato icon"
+          key={i}
+          src={tomatoIcon}
+          className="tomato-icon"
+        ></img>
+      );
     }
 
     return tomatoes;

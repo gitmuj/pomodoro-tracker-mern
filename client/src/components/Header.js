@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Button, Nav } from "react-bootstrap";
 import logo from "./images/logo.png";
-import { useRouteMatch, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { signOut } from "../actions";
 

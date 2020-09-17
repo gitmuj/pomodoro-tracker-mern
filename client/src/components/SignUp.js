@@ -1,9 +1,9 @@
 import React from "react";
 import { useFormik } from "formik";
-import { Modal, Form, Button, Container, Row, Col } from "react-bootstrap";
+import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import { connect } from "react-redux";
 import { createUser, checkUsername, checkEmail } from "../actions";
-import { Redirect, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const SignUp = props => {
   const history = useHistory();

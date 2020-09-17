@@ -34,7 +34,6 @@ export const checkEmail = email => async dispatch => {
 
 export const login = values => async dispatch => {
   const response = await axios.post("/api/users/login", values);
-  console.log(response);
 
   dispatch({ type: LOGIN, payload: response.data });
 };
