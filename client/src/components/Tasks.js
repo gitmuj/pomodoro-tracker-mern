@@ -101,8 +101,6 @@ class Tasks extends React.Component {
     tasks.forEach(task => {
       currentCount += task.tomatoes;
     });
-    console.log(previousTomatoeCount);
-    console.log(currentCount);
   }
 
   updateTaskList = () => {
