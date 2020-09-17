@@ -26,6 +26,9 @@ const App = () => {
           <Route path="/login" exact>
             <Login />
           </Route>
+          <Route path="/" exact>
+            <Login />
+          </Route>
           <Route path="/tasks" exact>
             <Tasks />
           </Route>
