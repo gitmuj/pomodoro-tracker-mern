@@ -21,7 +21,6 @@ export const createUser = userValues => async dispatch => {
 export const checkUsername = username => async dispatch => {
   const params = { name: username };
   const response = await axios.post("/api/users/checkusername", params);
-  console.log(response);
 
   dispatch({ type: CHECK_USERNAME, payload: response.data });
 };
