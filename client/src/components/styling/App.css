@@ -1,0 +1,30 @@
+.tomato-icon {
+  max-width: 5%;
+  max-height: 5%;
+}
+
+.table-col {
+  width: 50%;
+}
+
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+  background-color: rgb(13, 204, 13);
+}
+
+.active {
+  background-color: rgb(13, 204, 13) !important;
+}
+
+@font-face {
+  font-family: "digital-clock-font";
+  src: url("./fonts/digital-7.regular.ttf");
+}
+
+.timer {
+  font-family: "digital-clock-font";
+}
+
+body {
+  background-image: url("../images/clock2.jpg");
+}
